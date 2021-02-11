@@ -31,14 +31,15 @@ jobs:
         uses: actions/setup-node@v2.1.4
         with:
           version: 12
-          # cmd: install
-      - name: GitHub Action for Yarn
-        uses: Borales/actions-yarn@v2.3.0
-        with:
-        # Yarn command
-          cmd: insatll
+         cmd: install
+      # - name: GitHub Action for Yarn
+      #   uses: Borales/actions-yarn@v2.3.0
+      #   with:
+      #     cmd: install
+      
       - name: Install Surge
         run: npm install -g surge
+      
       - name: Deploying Project on Surge
         run: surge ./1- Reactjs/build/ reactjs-hkbenvision.surge.sh --token ${{secrets.SURGE_TOKEN}}
          
