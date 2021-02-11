@@ -37,7 +37,7 @@ jobs:
         with:
           cmd: install #yarn insatll or npm install
 
-      -name: creating build
+      - name: creating build
         run: yarn build
         # run: npm run build
       
