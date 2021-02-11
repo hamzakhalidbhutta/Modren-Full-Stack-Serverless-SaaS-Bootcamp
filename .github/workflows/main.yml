@@ -32,13 +32,15 @@ jobs:
           node-version: 12
           # cmd: npm run build
 
-      - name: GitHub Action for Yarn
-        uses: Borales/actions-yarn@v2.3.0
-        with:
-          cmd: install #yarn insatll or npm install
+      - name: Insatlling node modules
+        run: npm install
+      # - name: GitHub Action for Yarn
+      #   uses: Borales/actions-yarn@v2.3.0
+      #   with:
+      #     cmd: install #yarn insatll or npm install
 
       - name: creating build
-        run: yarn build
+        run: npm build
         # run: npm run build
       
       - name: Install Surge
