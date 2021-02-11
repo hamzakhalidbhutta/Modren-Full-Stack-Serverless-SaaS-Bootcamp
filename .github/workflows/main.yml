@@ -27,19 +27,19 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v1.4.2
         with:
           node-version: 12
 
 
-      # - name: GitHub Action for Yarn
-        # uses: Borales/actions-yarn@v2.3.0
-        # with:
-          # cmd: install
+      - name: GitHub Action for Yarn
+        uses: Borales/actions-yarn@v2.1.0
+        with:
+          cmd: install
       
-      # - name: Install Surge
-        # run: npm install --global surge
+      - name: Install Surge
+        run: npm install --global surge
       
-      # - name: Deploying Project on Surge
-        # run: surge ./1- Reactjs/build/ reactjs-hkbenvision.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      - name: Deploying Project on Surge
+        run: surge ./1- Reactjs/build/ reactjs-hkbenvision.surge.sh --token ${{secrets.SURGE_TOKEN}}
          
