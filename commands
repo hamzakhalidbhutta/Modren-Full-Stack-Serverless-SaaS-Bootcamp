@@ -1,0 +1,7 @@
+1- npm install --global yarn
+2- yarn --version
+3- yarn create react-app projectName
+4- yarn build
+5- surge
+6- surge token
+7- 
