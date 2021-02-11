@@ -40,7 +40,7 @@ jobs:
       #     cmd: install #yarn insatll or npm install
 
       - name: creating build
-        run: npm build
+        run: npm run build
         # run: npm run build
       
       - name: Install Surge
