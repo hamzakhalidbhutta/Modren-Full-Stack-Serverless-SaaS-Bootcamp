@@ -30,12 +30,16 @@ jobs:
         uses: actions/setup-node@v2.1.4
         with:
           node-version: 12
-          cmd: npm run build
+          # cmd: npm run build
 
       - name: GitHub Action for Yarn
         uses: Borales/actions-yarn@v2.1.0
         with:
           cmd: install
+
+      -name: creating build
+        run: yarn build
+        # run: npm run build
       
       - name: Install Surge
         run: npm install --global surge
